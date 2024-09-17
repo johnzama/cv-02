@@ -9,8 +9,8 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                // Clone your GitHub repository
-                git 'https://github.com/johnzama/cv-02.git'
+                // Specify the correct branch to clone from your GitHub repository
+                git branch: 'main', url: 'https://github.com/johnzama/cv-02.git'
             }
         }
         
